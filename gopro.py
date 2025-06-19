@@ -54,9 +54,6 @@ class GoProVideo:
         self.ix = ix
         self.chapters = []
 
-    def sort(self):
-        self.chapters.sort(lambda v: v.ix) 
-
     def add_chapter(self, chapter: VideoChapter):
         if not self.birth or chapter.birth < self.birth:
             self.birth = chapter.birth
