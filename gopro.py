@@ -31,7 +31,7 @@ def ffconcat_output(videos, stream):
     print("ffconcat version 1.0", file=stream)
     for video in videos:
         for chapter in video.chapters:
-            print(f"{chapter.f}", file=stream)
+            print(f"file {chapter.f}", file=stream)
 
 def mpv_output(videos, stream):
     for video in videos:
